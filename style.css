@@ -79,75 +79,23 @@
   padding: 10px 30px;
   font-size: 16px;
   font-weight: 500;
+  margin-left: 16px;
 }
 
-.popup-container {
-   
-  background-color: rgba(0,0,0,0.6);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.popup{
-  height: 350px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  border-radius: 10px;
-  padding: 30px;
-  text-align: center;
-}
-
-.popup h2 {
-  color: var(--grey);
-}
-
-.popup-input {
-  width: 99%;
-  border: 0px;
-  border-bottom: 1px solid var(--grey);
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.popup-checkbox {
-  width: 100%;
-  display:flex;
-  font-size: 16px;
-  flex-direction: row;
-  align-items: center;
-  
-}
-
-.popup-checkbox input{
-  margin-left: 0;
-}
-
-.popup-checkbox input:checked{
-  background: #E5261E;
-}
-
-.popup button{
-  color: white;
-  background-color: var(--red);
+.auth-btn-exit {
+  color: var(--red);
+  background-color:white ;
   border: 0;
   border-radius: 5px;
   padding: 10px 30px;
   font-size: 16px;
   font-weight: 500;
-  height: 36px;
-  width: 128px;
-  margin-top: 130px;
-  margin-bottom: 50px;
+  margin-left: 16px;
+}
+.auth {
+  display: flex;
+  align-items: center;
+  
 }
 
 .tabs-container {
@@ -193,11 +141,6 @@
 .new-card img { 
   border-radius: 8px;
 }
-
-.new-card img{ 
-  background: rgba(29, 106, 154, 0.80);
-}
-
 
 .new-card p {
   width: 270px;
@@ -349,3 +292,67 @@
   background-color: #F2F2F2;
 }
 
+.popup-container {
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+.popup{
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.popup h2 {
+  color: var(--grey);
+}
+
+.popup-input {
+  width: 99%;
+  border: 0px;
+  border-bottom: 1px solid var(--grey);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.popup-checkbox {
+  width: 100%;
+  display:flex;
+  font-size: 16px;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.popup-checkbox input{
+  margin-left: 0;
+}
+
+.popup button{
+  color: white;
+  background-color: var(--red);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 36px;
+  width: 128px;
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
