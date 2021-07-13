@@ -90,12 +90,15 @@
   padding: 10px 30px;
   font-size: 16px;
   font-weight: 500;
-  margin-left: 16px;
 }
 .auth {
   display: flex;
   align-items: center;
 
+}
+.auth input{
+  border:0;
+  font-size: 16px;
 }
 
 .tabs-container {
