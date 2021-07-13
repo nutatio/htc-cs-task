@@ -25,6 +25,8 @@
 }
 *{
   font-family: 'Rubik';
+  scrollbar-width: thin;
+  scrollbar-color: #BDBDBD #F2F2F2 ;
 }
 
 body::-webkit-scrollbar {
