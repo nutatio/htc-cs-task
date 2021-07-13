@@ -195,9 +195,45 @@
   border-radius: 8px;
 }
 
-.new-card p {
-width: 270px;
+.new-card img{ 
+  background: rgba(29, 106, 154, 0.80);
 }
+
+
+.new-card p {
+  width: 270px;
+  }
+
+  
+.img__wrap {
+  position: relative;
+}
+.img__description p {
+  margin: 16px;
+  line-height: 140%;
+}
+.img__description {
+  font-size: 16px;
+  text-align:left;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333333;
+  color: #F2F2F2;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  color: #f2f2f2;
+  opacity: 0.8;
+}
+
 
 .genre-cards { 
   justify-content: center;
