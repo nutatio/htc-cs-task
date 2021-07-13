@@ -68,17 +68,13 @@ authBtn.addEventListener('click', () =>{
   popup.style.display = 'flex';
 });
 
-function makeField() {
-  var input = document.createElement('input');
-  document.body.appendChild(input);
-}
 
 if(getCookie('user') !== undefined ){
   authBtn.setAttribute('hidden','enabled');
   authExitBtn.removeAttribute('hidden');
   let name = getCookie('user');
   auth.innerHTML = `
-    <input onclick="makeField()"" id="my-input"></input>
+    <input onclick="" id="my-input"></input>
   `;
   const inputEl = document.getElementById('my-input');
   inputEl.value = name;
