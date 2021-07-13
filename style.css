@@ -56,6 +56,7 @@
 }
 
 .search-bar-input { 
+  font-size: 16px;
   width: 100%;
   border: 0px;
   border-bottom: 1px solid var(--grey);
@@ -67,6 +68,7 @@
   font-size: 16px;
   font-weight: 500;
   border: 0;
+  margin-left: 30px;
 }
 
 .auth-btn { 
@@ -162,8 +164,152 @@
   padding: 0;
   margin: 10px;
 }
+
 .tab-btn.active{
   color: var(--red);
   border-bottom: 2px solid var(--red);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+
+.new-cards { 
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.new-card {
+  margin: 10px;
+  display: block;
+  flex-direction: column;
+}
+
+.new-card img { 
+  border-radius: 8px;
+}
+
+.new-card p {
+width: 270px;
+}
+
+.genre-cards { 
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.genre-card { 
+  border-radius: 6px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  width: 270px;
+  height: 270px;
+  margin: 10px;
+  border-radius: 6px;
+  
+}
+.genre-card.comedy{
+  background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+  opacity: 0.8;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card.comedy:hover{
+  background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+  opacity: 1;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card.drama { 
+  background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+  opacity: 0.8;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card.drama:hover { 
+  background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+  opacity: 1;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card.sci-fi { 
+  background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+  opacity: 0.8;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card.sci-fi:hover { 
+  background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+  opacity: 1;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card.horror { 
+  background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+  opacity: 0.8;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card.horror:hover { 
+  background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+  opacity: 1;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+.genre-card p {
+  font-size: 20px;
+}
+.genre-card h2 {
+  font-size: 48px;
+}
+
+.channels-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+.channel-card {
+  background-color: #F2F2F2;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.show{
+  justify-content: baseline;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.timetable h2{
+  font-size: 20px;
+}
+
+.show p { 
+  margin: 0;
+  margin-bottom: 1vh;
+  margin-left: 5px;
+  font-size: 16px;
+}
+.show p#time { 
+  margin: 0;
+  margin-bottom: 1vh;
+ 
+}
+.channel-card svg {
+  width: 50vh;
+  height: 6vh;
+}
+.footer{
+  background-color: #F2F2F2;
 }
 
