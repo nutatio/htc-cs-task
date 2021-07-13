@@ -11,7 +11,6 @@ const authExitBtn = document.getElementById('auth-btn-exit');
 
 const active = 'active';
 
-document.cookie = 'user=john';
 
 function getCookie(name) {
   let matches = document.cookie.match(new RegExp(
@@ -70,10 +69,10 @@ authBtn.addEventListener('click', () =>{
 });
 
 function makeField() {
-  console.log(authExitBtn);
   var input = document.createElement('input');
   document.body.appendChild(input);
 }
+
 if(getCookie('user') !== undefined ){
   authBtn.setAttribute('hidden','enabled');
   authExitBtn.removeAttribute('hidden');
@@ -84,6 +83,7 @@ if(getCookie('user') !== undefined ){
   const inputEl = document.getElementById('my-input');
   inputEl.value = name;
 }
+
 popupBtn.addEventListener('click', () =>{
   popup.style.display = 'none';
   authBtn.setAttribute('hidden','enabled');
@@ -94,6 +94,7 @@ popupBtn.addEventListener('click', () =>{
   `;
   const inputEl = document.getElementById('my-input');
   inputEl.value = name;
+  setCookie('user',`${name}`);
 });
 
 authExitBtn.addEventListener('click', () =>{
