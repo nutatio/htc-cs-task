@@ -28,39 +28,52 @@
         <p>Видеосервис</p>
       </div>
       <div class="serach-bar">
-        <input type="text" placeholder="Поиск..." />
-        <button>Найти</button>
+        <input type="text" placeholder="Поиск..." class="search-bar-input"/>
+        <button class="serach-bar-btn">Найти</button>
       </div>
       <div class="auth">
-        <button id="auth-btn">Войти</button>
+        <button class="auth-btn" id="auth-btn">Войти</button>
+      </div>
+    </div>
+    <div class="popup-container" >
+      <div class="popup">
+        <h2>Вход</h2>
+        
+        <input type="text" class="popup-input" id="login" placeholder="Логин...">
+        <input type="text" class="popup-input" id="password" placeholder="Пароль...">
+        <div class="popup-checkbox">
+          <input type="checkbox" name="remember" id="remember">
+          <label for="remember">Запомнить</label>
+        </div>
+        <button class="popup-btn" id="popup-btn">Войти</button>
       </div>
     </div>
     <div class="tabs-container">
-      <button>Фильмы</button>
-      <button>Телеканалы</button>
+      <button class="tab-btn active" id="film-tab">Фильмы</button>
+      <button class="tab-btn" id="channel-tab">Телеканалы</button>
     </div>
 
     <div class="content-container">
       <div class="new-container">
-        <h2>Новинки</h2>
+        <h2>🔥 Новинки</h2>
 
         <div class="new-card">
-          <img src="" alt="кися" />
+          <img src="/img/cat.jpg" alt="кися" />
           <p>Мульт в кино. Выпуск №103. Некогда грустить!</p>
         </div>
 
         <div class="new-card">
-          <img src="" alt="Постер Бэтмена" />
+          <img src="/img/batman.jpg" alt="Постер Бэтмена" />
           <p>Новый Бэтмен</p>
         </div>
 
         <div class="new-card">
-          <img src="" alt="Постер Однажды в Голливуде" />
+          <img src="img/hollywood.jpg" alt="Постер Однажды в Голливуде" />
           <p>Однажды... в Голливуде</p>
         </div>
 
         <div class="new-card">
-          <img src="" alt="Постер Стриптизёрши" />
+          <img src="img/w-man.jpg" alt="Постер Стриптизёрши" />
           <p>Стриптизёрши</p>
         </div>
       </div>
