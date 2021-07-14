@@ -64,7 +64,7 @@ body::-webkit-scrollbar-track {
   padding-left: 10px;
   font-size: 20px;
 }
-.serach-bar{
+.search-bar{
   display: flex;
   flex-direction: row;
   /* justify-content: space-between; */
@@ -79,13 +79,17 @@ body::-webkit-scrollbar-track {
   border-bottom: 1px solid var(--grey);
 }
 
-.serach-bar-btn {
+.search-bar-btn {
   color: var(--red);
   background-color: white;
   font-size: 16px;
   font-weight: 500;
   border: 0;
   margin-left: 30px;
+}
+
+.search-bar-btn:hover {
+ cursor: pointer;
 }
 
 .auth-btn { 
@@ -99,6 +103,10 @@ body::-webkit-scrollbar-track {
   margin-left: 16px;
 }
 
+.auth-btn:hover {
+  cursor: pointer;
+}
+
 .auth-btn-exit {
   color: var(--red);
   background-color:white ;
@@ -108,6 +116,11 @@ body::-webkit-scrollbar-track {
   font-size: 16px;
   font-weight: 500;
 }
+
+.auth-btn-exit:hover {
+  cursor: pointer;
+}
+
 .auth {
   display: flex;
   align-items: center;
@@ -121,6 +134,10 @@ body::-webkit-scrollbar-track {
 .tabs-container {
   display: flex;
   justify-content: center;
+}
+
+.tab-btn:hover {
+cursor: pointer;
 }
 
 .tab-btn {
@@ -196,6 +213,7 @@ body::-webkit-scrollbar-track {
   visibility: visible;
   color: #f2f2f2;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .genre-container {
@@ -225,6 +243,7 @@ body::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
 }
 .genre-card.comedy:hover{
+  cursor: pointer;
   background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
   opacity: 1;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
@@ -235,6 +254,7 @@ body::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
 }
 .genre-card.drama:hover { 
+  cursor: pointer;
   background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
   opacity: 1;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
@@ -245,6 +265,7 @@ body::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
 }
 .genre-card.sci-fi:hover { 
+  cursor: pointer;
   background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
   opacity: 1;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
@@ -255,6 +276,7 @@ body::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
 }
 .genre-card.horror:hover { 
+  cursor: pointer;
   background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
   opacity: 1;
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
@@ -412,4 +434,8 @@ body::-webkit-scrollbar-track {
   width: 128px;
   margin-top: 130px;
   margin-bottom: 50px;
+}
+
+.popup button:hover {
+  cursor: pointer;
 }
