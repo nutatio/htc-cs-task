@@ -29,6 +29,11 @@
   scrollbar-color: #BDBDBD #F2F2F2 ;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body::-webkit-scrollbar {
   width: 8px; 
   background-color: #F2F2F2;
@@ -62,14 +67,15 @@ body::-webkit-scrollbar-track {
 .serach-bar{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 500px;
 }
 
 .search-bar-input { 
   font-size: 16px;
-  width: 100%;
+  width: 70%;
   border: 0px;
+  margin-left: 10vh;
   border-bottom: 1px solid var(--grey);
 }
 
@@ -163,6 +169,7 @@ body::-webkit-scrollbar-track {
   
 .img__wrap {
   position: relative;
+  height: 370px;
 }
 .img__description p {
   margin: 16px;
@@ -191,6 +198,9 @@ body::-webkit-scrollbar-track {
   opacity: 0.8;
 }
 
+.genre-container {
+  margin-bottom: 7vh;
+}
 
 .genre-cards { 
   justify-content: center;
@@ -203,8 +213,8 @@ body::-webkit-scrollbar-track {
   text-align: center;
   box-sizing: border-box;
   color: white;
-  width: 270px;
-  height: 270px;
+  width: 280px;
+  height: 208px;
   margin: 10px;
   border-radius: 6px;
   
@@ -261,6 +271,8 @@ body::-webkit-scrollbar-track {
   justify-content: center;
   flex-direction: column;
   display: none;
+  margin-top: 2vh;
+  margin-bottom: 9vh;
 }
 .channel-card {
   background-color: #F2F2F2;
@@ -304,8 +316,9 @@ body::-webkit-scrollbar-track {
 }
 
 .footer{
+  position: relative;
+    width: 100%;
   background-color: #F2F2F2;
-  position:relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -315,9 +328,10 @@ body::-webkit-scrollbar-track {
   justify-content: center;
   padding-top:1%;
   padding-bottom:1%;
+  align-items: center;
 }
 .footer-logo{
-  margin-right: 5vh;
+  margin-right: 4vh;
   
 }
 .footer-text{
