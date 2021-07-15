@@ -51,7 +51,7 @@ filmBtn.addEventListener('click', () =>{
       channelBtn.classList.toggle(active);
       channels.style.display='none';
   }
-  films.style.display='grid';
+  films.style.display='';
 });
 
 channelBtn.addEventListener('click', () =>{
