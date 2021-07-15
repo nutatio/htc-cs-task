@@ -18,13 +18,13 @@
        url('../fonts/rubik-v14-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
 :root {
   --red: #E5261E;
   --grey: #333333;
   --footer-grey: #F2F2F2;
   --scrollbar-grey: #BDBDBD;
 }
+
 *{
   font-family: 'Rubik';
   scrollbar-width: thin;
@@ -80,7 +80,6 @@ body::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-
 }
 
 .search-bar-input { 
